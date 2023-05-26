@@ -1,0 +1,33 @@
+body{
+
+    background-color: black; /*sirve para poner color en toda la pagina o pantalla*/
+}
+
+.logo{
+
+    width: 150px;/*define un acho*/
+    height: 250px;/*define un alto*/
+
+
+    box-sizing: border-box;/*define el tamaño de la caja*/
+    position: absolute;/*sirve para obtener una posicion absoluta*/
+    top: 50%;/*ubicamos arriba*/
+    left: 50%;/*ubicamos abajo*/
+    transform: translate(-50%, -50%);/*RECOLOCAMOS UN ELEMENTO EN EL EJE HORIZONTAL O VERTICAL*/
+    border-right: 50px solid #a90003;/*establecemos el ancho, un estilo y el color del borde del lado derecho*/
+    border-left: 50px solid #a90003;/*establecemos el ancho, un estilo y el color del borde del lado izquierdo*/
+}
+
+.logo::before{
+
+    content: '';
+    display: block;/*indivamos que es el 100% ancho*/
+    position: absolute;/*para que quede por encima*/
+    width: 50px;
+    height: 250px;
+    top: 0;/*determinamos la ubicacion final del elemnto*/
+    left: 0;/*determinamos la ubicacion final del elemnto*/
+    background: #db0001;
+    transform: skewX(21.8deg)/*para inclinar la pata*/;
+    box-shadow: 0 0 30px black ;/*asigna sombra para que haga relieve*/
+}
